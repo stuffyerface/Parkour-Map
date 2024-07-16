@@ -1,0 +1,1 @@
+execute as @s[type=item] run kill @s
