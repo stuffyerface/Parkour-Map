@@ -1,0 +1,1 @@
+function animation:blockdrops {"item":"minecraft:carrot"}

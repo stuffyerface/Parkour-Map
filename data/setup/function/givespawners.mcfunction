@@ -1,0 +1,2 @@
+give @s bat_spawn_egg[custom_name='{"text":"Spawn Breakable Wall"}',entity_data={id:"minecraft:bat",Tags:["breakable_wall"]}] 1
+give @s bat_spawn_egg[custom_name='{"text":"Spawn Snake Block"}',entity_data={id:"minecraft:bat",Tags:["snake_block"]}] 1

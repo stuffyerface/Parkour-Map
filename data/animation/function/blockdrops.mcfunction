@@ -1,0 +1,1 @@
+$summon item ~ ~ ~ {Glowing:1b,Age:5950,PickupDelay:51,Motion:[0.0,.5,0.0],Item:{id:"$(item)",count:1,components:{"minecraft:max_stack_size":1}}}
