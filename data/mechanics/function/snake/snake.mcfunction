@@ -6,4 +6,4 @@ execute as @e[type=block_display,tag=snake_block] at @s if score @s snake matche
 
 
 execute as @e[type=block_display,tag=snake_block] at @s if score @s snake matches 0 run scoreboard players set @s snake 26
-schedule function snake:snake 10t
+schedule function mechanics:snake/snake 10t

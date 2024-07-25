@@ -1,7 +1,7 @@
 advancement revoke @s only gui:delayeddummy
 execute if entity @s[tag=dontUpdateInventory] run return run function gui:dontupdate
 execute if score @s placeTnt matches 1.. run say placed tnt
-execute if score @s placeTnt matches 1.. run return run function mechanics:place_tnt
+execute if score @s placeTnt matches 1.. run return run function mechanics:tnt/place_tnt
 clear @s
 
 execute if score @s inventoryState matches 0 run item replace entity @s hotbar.8 with explorer_pottery_sherd[max_stack_size=1,custom_name='{"color":"light_purple","italic":false,"text":"Level Selector"}',lore=['{"color":"gray","italic":false,"text":"Click to go to level selection"}'],food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:1000000}] 1
