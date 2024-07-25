@@ -5,7 +5,7 @@ effect give @s minecraft:resistance infinite 10 true
 effect give @s minecraft:night_vision infinite 0 true
 attribute @s minecraft:generic.fall_damage_multiplier base set 0
 scoreboard players set @s inventoryState 0
-scoreboard players reset @s level
+scoreboard players set @s level -1
 function gui:inventoryupdated
 tp @s 0 208 0 0 90
 title @s times 1 70 10
