@@ -9,6 +9,6 @@ scoreboard objectives add age dummy
 scoreboard objectives add placeTnt minecraft.used:minecraft.tnt
 scoreboard objectives add range dummy
 scoreboard objectives add snake dummy
-
+scoreboard objectives add level dummy
 
 scoreboard objectives add utils dummy
