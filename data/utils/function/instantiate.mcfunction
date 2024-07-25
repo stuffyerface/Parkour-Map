@@ -7,6 +7,8 @@ scoreboard objectives add countdown_s dummy
 scoreboard objectives add countdown_ms dummy
 scoreboard objectives add age dummy
 scoreboard objectives add placeTnt minecraft.used:minecraft.tnt
+scoreboard objectives add range dummy
+scoreboard objectives add snake dummy
 
 
 scoreboard objectives add utils dummy
