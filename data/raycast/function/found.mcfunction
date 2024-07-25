@@ -1,1 +1,1 @@
-data merge entity @e[type=minecraft:block_display,limit=1] {Glowing:1}
+data merge entity @e[type=minecraft:block_display,limit=1] {Glowing:1b}
