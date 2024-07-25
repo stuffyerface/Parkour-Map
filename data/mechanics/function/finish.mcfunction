@@ -1,1 +1,1 @@
-function animation:blockdrops {"item":"minecraft:carrot"}
+say @s finished

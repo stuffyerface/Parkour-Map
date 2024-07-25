@@ -1,0 +1,1 @@
+execute at @s[nbt={"OnGround":1b}] positioned ~-.8 ~-1.1 ~-.8 as @e[type=marker,tag=falling_block,dx=0.6,dy=1.0,dz=0.6] at @s run return run function mechanics:fallingblock/stepped_on
