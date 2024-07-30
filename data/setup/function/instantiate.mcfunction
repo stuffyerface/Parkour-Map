@@ -10,5 +10,9 @@ scoreboard objectives add placeTnt minecraft.used:minecraft.tnt
 scoreboard objectives add range dummy
 scoreboard objectives add snake dummy
 scoreboard objectives add level dummy
+scoreboard objectives add playerID dummy
+scoreboard players reset * playerID
+scoreboard players set .current playerID 0
+execute as @a run function utils:giveplayerid
 
 scoreboard objectives add utils dummy
