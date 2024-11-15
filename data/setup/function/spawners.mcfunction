@@ -17,8 +17,8 @@ execute as @e[type=bat,tag=switch_red] at @s run summon marker ~ ~ ~ {Tags:["swi
 kill @e[type=bat,tag=switch_red]
 kill @e[type=bat,tag=switch_blue]
 
-execute as @e[type=bat,tag=falling_block] at @s run summon marker ~ ~ ~ {Tags:["falling_block"]}
-execute as @e[type=bat,tag=falling_block] at @s run setblock ~ ~ ~ yellow_glazed_terracotta
+execute as @e[type=bat,tag=falling_block] at @s run summon marker ~ ~-1 ~ {Tags:["falling_block"]}
+execute as @e[type=bat,tag=falling_block] at @s run setblock ~ ~-1 ~ yellow_glazed_terracotta
 
 kill @e[type=bat,tag=falling_block]
 

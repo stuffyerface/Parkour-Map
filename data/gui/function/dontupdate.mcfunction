@@ -1,3 +1,3 @@
 advancement revoke @s only gui:updateinventory
-execute if entity @s[tag=DEBUG] run return fail
+execute if entity @s[gamemode=!adventure] run return fail
 tag @s remove dontUpdateInventory
