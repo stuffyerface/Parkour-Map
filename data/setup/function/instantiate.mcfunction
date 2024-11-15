@@ -18,3 +18,5 @@ scoreboard objectives add levelMarker dummy
 
 scoreboard objectives add utils dummy
 scoreboard objectives add variables dummy
+
+scoreboard objectives add sidebar dummy "sidebar"
