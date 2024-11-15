@@ -12,3 +12,4 @@ scoreboard players set @s currentRunMinutes 0
 
 execute store result storage mechanics:bossbar/remove id.value int 1 run scoreboard players get @s playerID 
 function mechanics:bossbar/remove with storage mechanics:bossbar/remove id
+advancement revoke @s only mechanics:pressureplate

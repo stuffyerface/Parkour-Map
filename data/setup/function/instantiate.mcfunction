@@ -14,5 +14,7 @@ scoreboard objectives add playerID dummy
 scoreboard players reset * playerID
 scoreboard players set .current playerID 0
 execute as @a run function utils:giveplayerid
+scoreboard objectives add levelMarker dummy
 
 scoreboard objectives add utils dummy
+scoreboard objectives add variables dummy
