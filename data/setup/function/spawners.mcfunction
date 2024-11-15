@@ -28,5 +28,7 @@ execute as @e[type=bat,tag=spawn_tnt] at @s run summon text_display ~ ~ ~ {billb
 kill @e[type=bat,tag=spawn_tnt]
 
 execute as @e[type=bat,tag=kill_tnt] at @s run kill @e[tag=tnt_pile,distance=..1]
-
 kill @e[type=bat,tag=kill_tnt]
+
+execute as @e[type=bat,tag=finish_plate] at @s run summon marker ~ ~ ~ {Tags:["endPlate"]}
+kill @e[type=bat,tag=finish_plate]
