@@ -1,2 +1,2 @@
-scoreboard players set @s range 100
-execute anchored eyes positioned ^ ^ ^ run function raycast:check
+scoreboard players set @s range 400
+execute anchored eyes positioned ^ ^ ^100 run function raycast:check

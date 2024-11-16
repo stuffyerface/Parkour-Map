@@ -20,3 +20,6 @@ scoreboard objectives add utils dummy
 scoreboard objectives add variables dummy
 
 scoreboard objectives add sidebar dummy "sidebar"
+
+team add noCollide
+team modify noCollide collisionRule never

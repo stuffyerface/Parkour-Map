@@ -6,3 +6,4 @@ give @s blaze_spawn_egg[custom_name='{"text":"Disappearing Block"}',entity_data=
 give @s chicken_spawn_egg[custom_name='{"text":"Spawn TNT Pile"}',entity_data={id:"minecraft:bat",Tags:["spawn_tnt"]}] 1
 give @s chicken_spawn_egg[custom_name='{"text":"Kill TNT Pile"}',entity_data={id:"minecraft:bat",Tags:["kill_tnt"]}] 1
 give @s panda_spawn_egg[custom_name='{"text":"Finish Plate"}',entity_data={id:"minecraft:bat",Tags:["finish_plate"]}] 1
+give @s breeze_spawn_egg[custom_name='{"text":"Level Highlight"}',entity_data={id:"minecraft:bat",Tags:["levelHighlight"]}] 1

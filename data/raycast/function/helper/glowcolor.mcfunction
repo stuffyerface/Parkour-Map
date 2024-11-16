@@ -1,0 +1,1 @@
+$execute positioned ~-10 ~ ~-10 run data merge entity @n[type=minecraft:block_display,tag=levelHighlight] {Glowing:1b,block_state: {Name: "minecraft:glass"},glow_color_override: $(colorOverride)}
