@@ -1,4 +1,3 @@
-execute as @a at @a run function raycast:start
 function mechanics:tnt/tnt
 function setup:spawners
 function mechanics:tnt/broken_walls
