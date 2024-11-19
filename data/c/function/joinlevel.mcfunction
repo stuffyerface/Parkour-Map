@@ -1,6 +1,3 @@
-# Display a title
-# Level x: Level Name
-# Teleport to spawnpoint, cant move or anything, countdown 321, startrun
 
 ride @s dismount
 effect clear @s invisibility
