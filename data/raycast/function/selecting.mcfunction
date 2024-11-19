@@ -6,4 +6,6 @@ execute as @s[tag=selectedLevel] run tag @s remove selectedLevel
 
 # ride again if you fell off (l)
 execute on vehicle run return 1
-function c:selectlevel
+summon item_display 0 206 0 {Tags:["new","levelSelector"]}
+ride @s mount @n[type=item_display,tag=levelSelector,tag=new]
+tag @e[type=item_display,tag=levelSelector,tag=new] remove new

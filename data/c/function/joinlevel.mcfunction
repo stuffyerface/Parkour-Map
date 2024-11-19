@@ -4,7 +4,7 @@
 
 ride @s dismount
 effect clear @s invisibility
-effect give @s minecraft:blindness 3 1 true
+effect give @s minecraft:blindness 1 1 true
 tag @s add startCountdown
 
 $execute as @e[type=marker,tag=levelMarker] if score @s levelMarker matches $(level) run tag @s add selectedLevel

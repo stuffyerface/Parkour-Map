@@ -1,4 +1,5 @@
 #activated on a win or a loss
+tag @s add spectating
 gamemode spectator @s
 gamemode creative @s
 attribute @s entity_interaction_range base set -1
@@ -14,3 +15,5 @@ execute store result storage mechanics:bossbar/remove id.value int 1 run scorebo
 function mechanics:bossbar/remove with storage mechanics:bossbar/remove id
 
 scoreboard players reset @s level
+
+function gui:inventoryupdated

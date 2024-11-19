@@ -25,3 +25,8 @@ team add noCollide
 team modify noCollide collisionRule never
 
 scoreboard objectives add levelCountdown dummy
+
+gamerule doDaylightCycle false
+gamerule keepInventory true
+gamerule drowningDamage false
+gamerule doFireTick false
