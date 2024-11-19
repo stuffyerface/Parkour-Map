@@ -7,3 +7,4 @@ execute as @s[tag=inRun] run function mechanics:runtimer
 execute if score @s level matches 48 run function mechanics:fallingblock/standingon
 
 execute as @s[tag=selectingLevel] run function raycast:start
+execute as @s[tag=selectingLevel] run function raycast:selecting
