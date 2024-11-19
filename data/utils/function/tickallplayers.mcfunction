@@ -14,3 +14,5 @@ execute as @s[tag=startCountdown] run function mechanics:countdown
 execute as @s[gamemode=creative] at @n[type=marker,tag=endPlate,distance=..4] run gamemode spectator @s
 execute as @s[gamemode=spectator] at @n[type=marker,tag=endPlate,distance=..4] run return 0
 execute as @s[gamemode=spectator] run gamemode creative
+
+execute as @s[tag=shrunk] run function mechanics:shrink/whileshrunk

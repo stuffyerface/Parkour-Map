@@ -15,6 +15,7 @@ scoreboard players reset * playerID
 scoreboard players set .current playerID 0
 execute as @a run function utils:giveplayerid
 scoreboard objectives add levelMarker dummy
+scoreboard objectives add shrinkTimer dummy
 
 scoreboard objectives add utils dummy
 scoreboard objectives add variables dummy
@@ -24,6 +25,7 @@ scoreboard objectives add sidebar dummy "sidebar"
 team add noCollide
 team modify noCollide collisionRule never
 team modify noCollide friendlyFire false
+team modify noCollide seeFriendlyInvisibles false
 
 scoreboard objectives add levelCountdown dummy
 
