@@ -1,5 +1,6 @@
 # do action bar
-title @s actionbar "CLICK! to select a level"
+title @s actionbar "Right Click to select a level!"
+
 # test for clicks idk
 execute as @s[tag=selectedLevel] run tag @s remove selectedLevel
 

@@ -10,6 +10,8 @@ execute if score @s currentRunMilliseconds matches ..5 run data modify storage m
 data modify storage mechanics:finish s_padding set value ""
 execute if score @s currentRunSeconds matches ..9 run data modify storage mechanics:finish s_padding set value "0"
 
+summon firework_rocket ~ ~1.6 ~ {Life:1,LifeTime:1,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_twinkle:true,colors:[I;11992845,938496],fade_colors:[I;1374207,1118622]}]}}}}
+
 function mechanics:finished with storage mechanics:finish
 advancement revoke @s only mechanics:pressureplate
 
