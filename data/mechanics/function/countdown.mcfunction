@@ -1,7 +1,11 @@
 scoreboard players add @s levelCountdown 1
 execute if score @s levelCountdown matches 2 run attribute @s minecraft:movement_speed base set 0
 execute if score @s levelCountdown matches 2 run attribute @s minecraft:jump_strength base set 0
-execute if score @s levelCountdown matches 2 run tp @s @n[tag=levelMarker]
+
+execute if score @s levelCountdown matches 2 run scoreboard players operation _selectedLevel variables = @s level
+execute if score @s levelCountdown matches 2 as @e[type=marker,tag=levelMarker] if score _selectedLevel variables = @s levelMarker run tag @s add selectedLevel
+execute if score @s levelCountdown matches 2 run tp @s @n[type=marker,tag=levelMarker,tag=selectedLevel]
+execute if score @s levelCountdown matches 2 run tag @e[type=marker,tag=levelMarker,tag=selectedLevel] remove selectedLevel
 
 # Countdown: 3
 execute if score @s levelCountdown matches 60 run title @s title ""

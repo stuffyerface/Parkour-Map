@@ -1,9 +1,9 @@
 #activated on a win or a loss
 tag @s add spectating
-gamemode spectator @s
-gamemode creative @s
 attribute @s entity_interaction_range base set -1
 attribute @s block_interaction_range base set -1
+gamemode spectator @s
+gamemode creative @s
 effect give @s invisibility infinite 0 true
 
 tag @s remove inRun

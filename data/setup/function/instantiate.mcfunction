@@ -30,3 +30,4 @@ gamerule doDaylightCycle false
 gamerule keepInventory true
 gamerule drowningDamage false
 gamerule doFireTick false
+gamerule randomTickSpeed 0
