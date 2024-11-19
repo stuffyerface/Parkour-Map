@@ -3,7 +3,7 @@ effect clear @s
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 10 true
 effect give @s minecraft:night_vision infinite 0 true
-attribute @s minecraft:generic.fall_damage_multiplier base set 0
+attribute @s minecraft:fall_damage_multiplier base set 0
 scoreboard players set @s inventoryState 0
 scoreboard players set @s level -1
 function gui:inventoryupdated
