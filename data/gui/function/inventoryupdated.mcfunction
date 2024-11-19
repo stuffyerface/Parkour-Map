@@ -1,8 +1,6 @@
 advancement revoke @s only gui:delayeddummy
 execute if entity @s[tag=dontUpdateInventory] run return run function gui:dontupdate
 #execute if entity @s[gamemode=!adventure] run return run function gui:dontupdate
-execute if score @s placeTnt matches 1.. run say placed tnt
-execute if score @s placeTnt matches 1.. run return run function mechanics:tnt/place_tnt
 
 # Clear All Inventory Items
 clear @s
