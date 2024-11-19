@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:shaper_armor_trim_smithing_template"
+          }
+        }
+      }
+    },
+  "rewards": {
+    "function": "gui:shrink"
+  }
+}
