@@ -23,3 +23,5 @@ scoreboard objectives add sidebar dummy "sidebar"
 
 team add noCollide
 team modify noCollide collisionRule never
+
+scoreboard objectives add levelCountdown dummy
