@@ -1,5 +1,3 @@
-execute if score @s level matches -1 run return run say "Whats wrong wit u" 
-
 execute store result storage mechanics:finish level int 1 run scoreboard players get @s level
 execute store result storage mechanics:finish time_ms int 1 run scoreboard players get @s currentRunMilliseconds
 execute store result storage mechanics:finish time_s int 1 run scoreboard players get @s currentRunSeconds

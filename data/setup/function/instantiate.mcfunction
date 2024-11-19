@@ -23,6 +23,7 @@ scoreboard objectives add sidebar dummy "sidebar"
 
 team add noCollide
 team modify noCollide collisionRule never
+team modify noCollide friendlyFire false
 
 scoreboard objectives add levelCountdown dummy
 

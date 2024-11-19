@@ -33,4 +33,5 @@ tag @s remove startCountdown
 attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:movement_speed base set 0.1
 scoreboard players reset @s levelCountdown
+execute if score @s level matches 44 run function mechanics:switchingblocks/attemptstart
 function mechanics:startrun
