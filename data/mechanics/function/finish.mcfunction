@@ -11,12 +11,6 @@ data modify storage mechanics:finish s_padding set value ""
 execute if score @s currentRunSeconds matches ..9 run data modify storage mechanics:finish s_padding set value "0"
 
 function mechanics:finished with storage mechanics:finish
-tag @s remove inRun
-scoreboard players set @s currentRunMilliseconds 0
-scoreboard players set @s currentRunSeconds 0
-scoreboard players set @s currentRunMinutes 0
-
-execute store result storage mechanics:bossbar/remove id.value int 1 run scoreboard players get @s playerID 
-function mechanics:bossbar/remove with storage mechanics:bossbar/remove id
 advancement revoke @s only mechanics:pressureplate
-scoreboard players reset @s level
+
+function mechanics:exitlevel

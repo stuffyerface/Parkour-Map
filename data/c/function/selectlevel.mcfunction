@@ -5,3 +5,8 @@ tag @e[type=marker,tag=item_display,tag=new] remove new
 tag @s add selectingLevel
 effect give @s invisibility infinite 0 true
 effect give @s minecraft:blindness 2 1 true
+
+attribute @s entity_interaction_range base set 5
+attribute @s block_interaction_range base set 5
+
+gamemode adventure @s
