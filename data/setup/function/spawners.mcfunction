@@ -1,3 +1,5 @@
+# FOR THIS TO WORK, MUST UNCOMMENT THE LINE IN minecraft:tick.mcfunction
+
 execute as @e[type=bat,tag=breakable_wall] at @s run summon marker ~ ~ ~ {Tags:["breakable_wall","new"]}
 execute as @e[type=marker,tag=new,tag=breakable_wall] at @s run setblock ~ ~ ~ cracked_stone_bricks replace
 execute as @e[type=marker,tag=new,tag=breakable_wall] run tag @s remove new
@@ -36,3 +38,10 @@ kill @e[type=bat,tag=finish_plate]
 execute as @e[type=bat,tag=levelHighlight] at @s run summon block_display ~-0.5 ~-0.5 ~0.5 {Tags:["levelHighlight"],block_state:{Name:"minecraft:glass_pane",Properties:{east:"true",west:"true",north:"false",south:"false"}},transformation:[21f,0f,0f,0f,0f,0f,-0.5f,0f,0f,21f,0f,0f,0f,0f,0f,1f], view_range:3.0f}
 execute as @e[type=bat,tag=levelHighlight] at @s run summon interaction ~10 ~ ~11 {Tags:["levelHighlight"],width:21}
 kill @e[type=bat,tag=levelHighlight]
+
+execute as @e[type=bat,tag=appearingBlock] at @s run setblock ~ ~-1 ~ gray_glazed_terracotta
+execute as @e[type=bat,tag=appearingBlock] at @s run summon marker ~ ~-1 ~ {Tags:["appearingBlock","new"]}
+execute as @e[type=bat,tag=appearingBlock] at @s run scoreboard players add _appearingIndex variables 1
+execute as @e[type=bat,tag=appearingBlock] as @e[type=marker,tag=new,tag=appearingBlock] run scoreboard players operation @s appearingIndex = _appearingIndex variables
+execute as @e[type=bat,tag=appearingBlock] as @e[type=marker,tag=new,tag=appearingBlock] run tag @s remove new
+kill @e[type=bat,tag=appearingBlock]
