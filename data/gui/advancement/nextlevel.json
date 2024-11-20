@@ -4,12 +4,12 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
-          "items": "minecraft:clock"
+          "items": "minecraft:rabbit_foot"
           }
         }
       }
     },
   "rewards": {
-    "function": "gui:restartlevel"
+    "function": "gui:nextlevel"
   }
 }
