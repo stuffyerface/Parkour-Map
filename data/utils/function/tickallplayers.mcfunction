@@ -13,6 +13,8 @@ execute as @s[tag=selectingLevel] run function raycast:selecting
 
 execute as @s[tag=startCountdown] run function mechanics:countdown
 
+execute as @s[tag=inRun] run function mechanics:bossbar/update
+
 execute as @s[gamemode=creative] at @n[type=marker,tag=endPlate,distance=..4] run gamemode spectator @s
 execute as @s[gamemode=creative] at @n[type=player,tag=inRun,distance=..4] run gamemode spectator @s
 execute as @s[gamemode=spectator] at @n[type=marker,tag=endPlate,distance=..4] run return 0
