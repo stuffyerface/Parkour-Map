@@ -5,5 +5,5 @@ scoreboard players set @s currentRunMinutes 0
 
 function gui:inventoryupdated
 
-execute store result storage mechanics:bossbar/create id.value int 1 run scoreboard players get @s playerID 
-function mechanics:bossbar/create with storage mechanics:bossbar/create id
+execute store result storage mechanics:bossbar/create id int 1 run scoreboard players get @s playerID 
+function mechanics:bossbar/create with storage mechanics:bossbar/create

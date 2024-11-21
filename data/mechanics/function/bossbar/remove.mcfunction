@@ -1,1 +1,1 @@
-$bossbar remove minecraft:height_$(value)
+$bossbar remove minecraft:height_$(id)

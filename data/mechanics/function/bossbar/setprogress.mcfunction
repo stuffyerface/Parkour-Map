@@ -1,0 +1,1 @@
+$bossbar set height_$(id) value $(bossbarProgress)
