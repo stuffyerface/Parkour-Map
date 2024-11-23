@@ -9,6 +9,10 @@ scoreboard objectives add age dummy
 scoreboard objectives add placeTnt minecraft.used:minecraft.tnt
 scoreboard objectives add range dummy
 scoreboard objectives add snake dummy
+scoreboard objectives add snakeHead dummy
+scoreboard objectives add snakeTail dummy
+scoreboard objectives add snakeID dummy
+scoreboard players set _currentsnakeTail variables 0 
 scoreboard objectives add level dummy
 scoreboard objectives add playerID dummy
 scoreboard players reset * playerID

@@ -4,7 +4,7 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
-          "items": "minecraft:shaper_armor_trim_smithing_template"
+          "items": "minecraft:flow_banner_pattern"
           }
         }
       }
