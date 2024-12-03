@@ -14,6 +14,7 @@ scoreboard players set @s currentRunMinutes 0
 execute store result storage mechanics:bossbar/remove id.id int 1 run scoreboard players get @s playerID 
 function mechanics:bossbar/remove with storage mechanics:bossbar/remove id
 
+execute if score @s level matches 43 run schedule function mechanics:snake/attemptstop 1t
 execute if score @s level matches 44 run schedule function mechanics:switchingblocks/attemptstop 1t
 
 scoreboard players reset @s level
