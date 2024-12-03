@@ -1,2 +1,2 @@
 $tag @s add finished_level_$(level)
-$tellraw @s [{"color":"white","selector":"@s"},{"color":"yellow","text":" has completed level "},{"bold":true,"color":"gold","text":"$(level)"},{"color":"yellow","text":" in "},{"color":"blue","text":"$(time_m):$(s_padding)$(time_s).$(ms_padding)$(time_ms)"},{"color":"yellow","text":"."},{"bold":true,"color":"light_purple","text":" NEW RECORD!"}]
+$tellraw @s [{"color":"white","selector":"@s"},{"color":"yellow","text":" has completed level "},{"bold":true,"color":"gold","text":"$(level)"},{"color":"yellow","text":" in "},{"color":"blue","text":"$(time_m):$(s_padding)$(time_s).$(ms_padding)$(time_ms)"},{"color":"yellow","text":"."},{"bold":true,"color":"light_purple","text":""}]

@@ -1,4 +1,6 @@
 gamemode spectator @s
+attribute @s entity_interaction_range base set -1
+attribute @s block_interaction_range base set -1
 effect clear @s
 effect give @s minecraft:saturation infinite 0 true
 effect give @s minecraft:resistance infinite 10 true
