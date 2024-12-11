@@ -1,4 +1,5 @@
 scoreboard players add @s currentRunMilliseconds 5
+scoreboard players add @s currentRunTotalMillis 5
 execute if score @s currentRunMilliseconds matches 100.. run scoreboard players add @s currentRunSeconds 1
 execute if score @s currentRunMilliseconds matches 100.. run scoreboard players set @s currentRunMilliseconds 0
 

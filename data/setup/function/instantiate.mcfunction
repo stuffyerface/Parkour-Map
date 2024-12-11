@@ -1,6 +1,7 @@
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add inventoryState dummy
 scoreboard objectives add currentRunMilliseconds dummy
+scoreboard objectives add currentRunTotalMillis dummy
 scoreboard objectives add currentRunSeconds dummy
 scoreboard objectives add currentRunMinutes dummy
 scoreboard objectives add countdown_s dummy
@@ -38,3 +39,4 @@ gamerule keepInventory true
 gamerule drowningDamage false
 gamerule doFireTick false
 gamerule randomTickSpeed 0
+gamerule naturalRegeneration false
