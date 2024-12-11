@@ -8,6 +8,7 @@ effect give @s invisibility infinite 0 true
 
 tag @s remove inRun
 scoreboard players set @s currentRunMilliseconds 0
+scoreboard players set @s currentRunTotalMillis 0
 scoreboard players set @s currentRunSeconds 0
 scoreboard players set @s currentRunMinutes 0
 
