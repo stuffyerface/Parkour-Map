@@ -1,0 +1,3 @@
+$execute if entity @e[type=marker,tag=levelMarker,scores={levelMarker=$(level)},tag=beaten] run data merge entity @s {Glowing:1b,block_state: {Name: "minecraft:glass"},glow_color_override: 14536453}
+$execute if entity @e[type=marker,tag=levelMarker,scores={levelMarker=$(level)},tag=!beaten,tag=completed] run data merge entity @s {Glowing:1b,block_state: {Name: "minecraft:glass"},glow_color_override: 6604900}
+$execute if entity @e[type=marker,tag=levelMarker,scores={levelMarker=$(level)},tag=!beaten,tag=!completed] run data merge entity @s {Glowing:1b,block_state: {Name: "minecraft:glass"},glow_color_override: 16777215}
