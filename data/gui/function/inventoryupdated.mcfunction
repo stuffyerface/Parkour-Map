@@ -14,7 +14,7 @@ execute as @s[tag=inRun] run item replace entity @s hotbar.7 with clock[max_stac
 # Spectate Spyglass (Removed)
 # execute as @s[tag=selectingLevel] run item replace entity @s hotbar.8 with spyglass[max_stack_size=1,custom_name='{"color":"light_purple","italic":false,"text":"Spectate"}',lore=['{"color":"gray","italic":false,"text":"Click to become a spectator"}'],consumable={consume_seconds:100000,animation:"none",has_consume_particles:false}] 1
 # Go next for Players not in a Run
-execute as @s[tag=spectating] run item replace entity @s hotbar.7 with rabbit_foot[max_stack_size=1,custom_name='[{"color":"light_purple","italic":false,"text":"Next Unbeaten Level"},{"color":"red","italic":false,"bold":true,"text":" (Currently Broken)"}]',lore=['{"color":"gray","italic":false,"text":"Click to go to the next level you have yet to beat"}'],consumable={consume_seconds:100000,animation:"none",has_consume_particles:false}] 1
+execute as @s[tag=spectating] run item replace entity @s hotbar.7 with rabbit_foot[max_stack_size=1,custom_name='{"color":"light_purple","italic":false,"text":"Next Unbeaten Level"}',lore=['{"color":"gray","italic":false,"text":"Click to go to the next level you have yet to beat"}'],consumable={consume_seconds:100000,animation:"none",has_consume_particles:false}] 1
 # Level Selector for Players not in a Run
 execute as @s[tag=spectating] run item replace entity @s hotbar.8 with explorer_pottery_sherd[max_stack_size=1,custom_name='{"color":"light_purple","italic":false,"text":"Level Selector"}',lore=['{"color":"gray","italic":false,"text":"Click to go to level selection"}'],consumable={consume_seconds:100000,animation:"none",has_consume_particles:false}] 1
 
