@@ -2,3 +2,4 @@ execute as @e[type=minecraft:block_display,tag=levelHighlight] run data merge en
 execute at @e[type=interaction,tag=levelHighlight,distance=..10,sort=furthest] run return run function raycast:found
 scoreboard players remove @s range 1
 execute if score @s range matches 1.. positioned ^ ^ ^0.5 run function raycast:check
+execute if score @s range matches 0 run title @s actionbar {"text": "Hover to highlight a level"}

@@ -1,5 +1,6 @@
 execute as @n[type=interaction,tag=levelHighlight] store result storage raycast:found level int 1 run scoreboard players get @s level 
-function raycast:helper/check with storage raycast:found
+execute positioned ~-10 ~ ~-10 as @n[type=minecraft:block_display,tag=levelHighlight] run function raycast:highlightme with storage raycast:found
+function raycast:actionbar with storage raycast:found
 
 execute as @s[tag=!selectedLevel] run return 1
 tag @s remove selectedLevel
