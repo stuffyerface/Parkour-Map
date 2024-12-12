@@ -15,3 +15,4 @@ function mechanics:finished with storage mechanics:finish
 advancement revoke @s only mechanics:pressureplate
 
 function mechanics:exitlevel
+function sidebar:updatelevels

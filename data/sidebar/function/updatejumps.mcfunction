@@ -1,0 +1,1 @@
+$scoreboard players display name _line5 sidebar ["",{"text":" \u0020$(jumps)","color":"white"},{"text":" total jumps","color":"#c7f758"}]

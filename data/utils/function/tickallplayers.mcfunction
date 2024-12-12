@@ -1,6 +1,7 @@
 execute if entity @s[tag=!spectating,tag=!inRun,tag=!startCountdown,tag=!selectingLevel] run function utils:newplayer
 execute if score @s leave matches 1.. run function utils:returningplayer
 execute if score @s placeTnt matches 1.. run function mechanics:tnt/place_tnt
+execute if score @s timesJumped matches 1.. run function sidebar:addjump
 execute as @s[y=-164,dy=100] run tp @s 0 500 0
 
 execute as @s[tag=inRun] run function mechanics:runtimer

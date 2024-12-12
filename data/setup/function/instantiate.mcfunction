@@ -23,11 +23,12 @@ scoreboard objectives add levelMarker dummy
 scoreboard objectives add levelCountdown dummy
 scoreboard objectives add shrinkTimer dummy
 scoreboard objectives add appearingIndex dummy
+scoreboard objectives add timesJumped minecraft.custom:jump
 
 scoreboard objectives add utils dummy
 scoreboard objectives add variables dummy
 
-scoreboard objectives add sidebar dummy "sidebar"
+function sidebar:setup
 
 team add noCollide
 team modify noCollide collisionRule never
