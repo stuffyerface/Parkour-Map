@@ -21,5 +21,6 @@ execute if score @s level matches 44 run schedule function mechanics:switchingbl
 scoreboard players reset @s level
 
 tag @s remove hasTnt
+function mechanics:laser/sethealth {value:20}
 
 function gui:inventoryupdated

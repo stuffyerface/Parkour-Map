@@ -13,7 +13,7 @@ scoreboard players set _line7 sidebar 0
 scoreboard players set _line8 sidebar 0
 scoreboard players set _line9 sidebar 0
 
-scoreboard players display name _line0 sidebar {"text":"v0.1.1", "color":"#4e4e4e"}
+scoreboard players display name _line0 sidebar {"text":"v0.1.2", "color":"#4e4e4e"}
 scoreboard players display name _line1 sidebar ""
 scoreboard players display name _line3 sidebar {"text":"   Completed", "color":"#58f7dc"}
 scoreboard players display name _line4 sidebar ""
