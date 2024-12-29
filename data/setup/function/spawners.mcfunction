@@ -41,3 +41,12 @@ kill @e[type=bat,tag=appearingBlock]
 
 execute as @e[type=bat,tag=snake_block] at @s run function mechanics:snake/spawnsnake with storage mechanics:snake
 kill @e[type=bat,tag=snake_block]
+
+execute as @e[type=bat,tag=laser_ns] at @s run summon block_display ~ ~0.5 ~ {Tags:["facingNS","laser","laserOn"],block_state:{Name: "red_concrete"}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.025f, -0.025f, -0.5f],scale:[0.05f, 0.05f, 1.0f]}}
+kill @e[type=bat,tag=laser_ns]
+
+execute as @e[type=bat,tag=laser_ew] at @s run summon block_display ~ ~0.5 ~ {Tags:["facingEW","laser","laserOn"],block_state:{Name: "red_concrete"}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], translation: [-0.5f, -0.025f, -0.025f],scale:[1.0f, 0.05f, 0.05f]}}
+kill @e[type=bat,tag=laser_ew]
+
+execute as @e[type=bat,tag=kill_laser] at @s positioned ~ ~0.5 ~ run kill @n[type=block_display,tag=laser,distance=..0.1]
+kill @e[type=bat,tag=kill_laser]

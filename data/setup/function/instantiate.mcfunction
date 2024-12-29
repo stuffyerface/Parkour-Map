@@ -25,6 +25,7 @@ scoreboard objectives add shrinkTimer dummy
 scoreboard objectives add appearingIndex dummy
 scoreboard objectives add timesJumped minecraft.custom:jump
 scoreboard objectives add customHealth dummy
+scoreboard objectives add iframes dummy
 
 scoreboard objectives add utils dummy
 scoreboard objectives add variables dummy

@@ -10,3 +10,4 @@ execute as @s[type=item_display,tag=levelSelector] run function raycast:killlone
 execute as @s[type=arrow] run function mechanics:arrow/arrowlifespan
 execute as @s[type=marker,tag=stepped_on,tag=appearingBlock] run function mechanics:appearing/shownext
 execute as @s[type=marker,tag=shown,tag=appearingBlock] run function mechanics:appearing/shownblock
+execute unless score _laserstate variables matches -1 as @s[type=block_display,tag=laser] run function mechanics:laser/handle

@@ -1,9 +1,12 @@
+execute if score @s customHealth matches 4 run return run function mechanics:laser/laserdeath
 execute as @s run playsound entity.generic.hurt block @s ~ ~ ~ 1 1
-execute if score @s customHealth matches 5 run return run function mechanics:laser/laserdeath
 tellraw @s [{"text": "OUCH!", "color": "red","bold": true},{"text": " Don't touch the lasers.","color": "white", "bold": false}]
-execute if score @s customHealth matches 20 run return run function mechanics:laser/sethealth {value:15}
-execute if score @s customHealth matches 15 run return run function mechanics:laser/sethealth {value:10}
-execute if score @s customHealth matches 10 run return run function mechanics:laser/sethealth {value:5}
+scoreboard players set @s iframes 20
+
+execute if score @s customHealth matches 20 run return run function mechanics:laser/sethealth {value:16}
+execute if score @s customHealth matches 16 run return run function mechanics:laser/sethealth {value:12}
+execute if score @s customHealth matches 12 run return run function mechanics:laser/sethealth {value:8}
+execute if score @s customHealth matches 8 run return run function mechanics:laser/sethealth {value:4}
 
 # In case player has never bee assigned a health score
-function mechanics:laser/sethealth {value:15}
+function mechanics:laser/sethealth {value:16}
