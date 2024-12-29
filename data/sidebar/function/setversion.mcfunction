@@ -1,0 +1,1 @@
+$scoreboard players display name _line0 sidebar {"text":"v$(version)", "color":"#4e4e4e"}
