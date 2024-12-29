@@ -1,0 +1,2 @@
+execute if entity @s[tag=facingNS] positioned ~ ~ ~-0.5 run particle minecraft:dust{color:[1.0,0.0,0.0],scale:0.2} ~ ~ ~0.5 0.04 0.04 0.3 0 10
+execute if entity @s[tag=facingEW] positioned ~-0.5 ~ ~ run particle minecraft:dust{color:[1.0,0.0,0.0],scale:0.2} ~0.5 ~ ~ 0.3 0.04 0.04 0 10

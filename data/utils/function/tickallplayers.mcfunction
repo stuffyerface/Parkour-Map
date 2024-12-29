@@ -23,3 +23,5 @@ execute as @s[gamemode=spectator] at @n[type=player,tag=inRun,distance=..4] run 
 execute as @s[gamemode=spectator] run gamemode creative
 
 execute as @s[tag=shrunk] run function mechanics:shrink/whileshrunk
+
+execute as @s[scores={iframes=1..}] run scoreboard players remove @s iframes 1
