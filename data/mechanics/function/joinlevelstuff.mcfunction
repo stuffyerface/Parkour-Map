@@ -9,5 +9,6 @@ $data modify storage c:start level set value $(level)
 data modify storage c:start levelName set string entity @n[tag=levelMarker,tag=selectedLevel] data.levelName
 function c:helpers/title with storage c:start
 $scoreboard players set @s level $(level)
+$scoreboard players set @s mostrecentlevel $(level)
 
 tag @e[tag=levelMarker,tag=selectedLevel] remove selectedLevel

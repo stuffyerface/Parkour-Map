@@ -8,6 +8,7 @@ effect give @s minecraft:night_vision infinite 0 true
 attribute @s minecraft:fall_damage_multiplier base set 0
 scoreboard players set @s inventoryState 0
 scoreboard players set @s level -1
+scoreboard players set @s mostrecentlevel 0
 execute if entity @s[tag=inRun] run function c:quitlevel
 tag @s remove dontUpdateInventory
 function gui:inventoryupdated
