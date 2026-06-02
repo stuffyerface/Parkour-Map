@@ -1,4 +1,5 @@
-setblock ~ ~ ~ air destroy
+setblock ~ ~ ~ air strict
+particle block_crumble{block_state:"cracked_stone_bricks"} ~ ~ ~ 0.5 0.5 0.5 0.1 10 force
 summon text_display ~ ~.5 ~ {shadow:1b,Tags:["breakable_wall_countdown","new"],background:0,text:'{"text":"5.000"}',billboard:"center","text_opacity":120}
 scoreboard players set @e[type=text_display,tag=breakable_wall_countdown,tag=new] countdown_s 5
 scoreboard players set @e[type=text_display,tag=breakable_wall_countdown,tag=new] countdown_ms 0

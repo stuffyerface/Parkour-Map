@@ -38,9 +38,12 @@ team modify noCollide collisionRule never
 team modify noCollide friendlyFire false
 team modify noCollide seeFriendlyInvisibles false
 
-gamerule doDaylightCycle false
-gamerule keepInventory true
-gamerule drowningDamage false
-gamerule doFireTick false
-gamerule randomTickSpeed 0
-gamerule naturalRegeneration false
+gamerule advance_time false
+gamerule keep_inventory true
+gamerule drowning_damage false
+gamerule fire_damage false
+gamerule fire_spread_radius_around_player 0
+gamerule random_tick_speed 0
+gamerule natural_health_regeneration false
+
+data merge storage dev:version {version:"0.4.0"}

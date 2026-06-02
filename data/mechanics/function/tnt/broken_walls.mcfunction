@@ -13,5 +13,5 @@ execute store result storage mechanics:tnt/update_countdown input.timer_ms int 1
 function mechanics:tnt/update_countdown with storage mechanics:tnt/update_countdown input
 
 
-execute if score @s countdown_s matches ..0 if score @s countdown_ms matches ..0 at @s run setblock ~ ~ ~ cracked_stone_bricks
+execute if score @s countdown_s matches ..0 if score @s countdown_ms matches ..0 at @s run setblock ~ ~ ~ cracked_stone_bricks strict
 execute if score @s countdown_s matches ..0 if score @s countdown_ms matches ..0 run kill @s
