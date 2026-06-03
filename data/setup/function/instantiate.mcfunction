@@ -46,4 +46,9 @@ gamerule fire_spread_radius_around_player 0
 gamerule random_tick_speed 0
 gamerule natural_health_regeneration false
 
+execute as @a run function utils:returningplayer
+
+kill @e[type=interaction,tag=levelSelector]
+summon interaction 3 184 1 {Tags:["levelSelector"]}
+
 data merge storage dev:version {version:"0.4.0"}

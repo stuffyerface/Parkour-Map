@@ -1,3 +1,4 @@
+tag @s remove admin
 gamemode spectator @s
 attribute @s entity_interaction_range base set -1
 attribute @s block_interaction_range base set -1
@@ -15,7 +16,7 @@ function gui:inventoryupdated
 
 tp @s 0 208 0 0 0
 title @s times 1 70 10
-title @s title "Welcome to 50 shades of parkour!"
+title @s title "Welcome to Parkour Plots!"
 title @s subtitle "by Stuffy, Tado, Flippyr"
 team join noCollide @s
 

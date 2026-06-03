@@ -7,4 +7,4 @@ tag @s remove selectedLevel
 tag @s remove selectingLevel
 #selected level
 function c:joinlevel with storage raycast:found
-execute as @e[type=minecraft:block_display,tag=levelHighlight] run data merge entity @s {Glowing:0b,block_state:{Name:"minecraft:air"}}
+execute as @e[type=minecraft:block_display,tag=levelHighlight] run data merge entity @s {Glowing:0b,view_range:0}
